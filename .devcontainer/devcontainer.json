@@ -1,0 +1,24 @@
+{
+    "name": "Flask Template",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "postCreateCommand": "pip install -r requirements.txt",
+    "forwardPorts": [5000],
+    "portsAttributes": {
+      "5000": {
+        "label": "Flask App",
+        "onAutoForward": "openPreview"
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "python.pythonPath": "/usr/local/bin/python"
+        },
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance"
+        ]
+      }
+    }
+  }
+  
